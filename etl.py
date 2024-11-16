@@ -42,4 +42,4 @@ def carregar_dados(df: pd.DataFrame, format_saida: list):
 def pipeline_calcular_kpi_de_vendas_consolidado(pasta: str, formato_de_saida: list):
     data_frame = extrair_dados_e_consolidar(pasta=pasta)
     data_frame_calculado = calcular_kpi_de_total_de_vendas(data_frame)
-    carregar_dados(data_frame_calculado, formato_de_saida)  
+    carregar_dados(data_frame_calculado, formato_de_saida)
